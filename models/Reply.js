@@ -9,7 +9,7 @@ const replySchema=new mongoose.Schema({
     parentReplyId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Reply",
-        required: true
+       default: null
     },
     content: {
        type: String,
